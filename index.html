@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Blog | Gretchen Watkins</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container mt-3">
+  <div class="d-none card mb-3" id="page-login">
+    <div class="card-header">Blog</div>
+    <div class="card-content p-3">
+      <h4 class="mb-3">Login</h4>
+      <input class="form-control mb-2" id="input-name" maxlength="40" placeholder="Enter you email here"/>
+	  <input class="form-control mb-2" type="Password" id="input-pass" maxlength="40" placeholder="Enter you password here"/>
+      <button class="btn btn-primary btn-block" id="btn-login" onclick="app.login()">Log in</button>
+    </div>
+  </div>
+  <div class="card" id="page-chat">
+    <div class="card-header">
+      <div><span id="your-name"></span>, welcome back!</span><button style="float:right; display:flex;" class="btn btn-primary" id="accbtn" onclick="account()"><i class="fa fa-user" aria-hidden="true"></i></button></div>
+    </div>
+    <div class="card-content" id="chat-wrap"></div>
+	
+    <div class="d-none p-2" id="input-msg">
+      <div class="input-group">
+        <input class="form-control" id="input-message" placeholder="What's on your mind?"/><span class="input-group-btn">
+          <button class="btn btn-primary" id="btn-sendMsg" onclick="app.sendMsg()">Send</button></span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- partial -->
+  <script src='https://www.gstatic.com/firebasejs/3.8.0/firebase.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

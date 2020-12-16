@@ -1,0 +1,73 @@
+body {
+	background-color: #f1eeea;
+	-webkit-user-select: none;  /* Chrome all / Safari all */
+	-moz-user-select: none;     /* Firefox all */
+	-ms-user-select: none;      /* IE 10+ */
+	-o-user-select: none;
+	user-select: none;
+}
+
+#input-msg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #efefef;
+}
+
+#chat-wrap {
+  padding: 30px 30px 80px 30px;
+}
+
+.message {
+	width: 100%;
+}
+
+.align-right {
+  position: relative;
+  left: 60%;
+}
+
+.txt-success {
+	background-color: grey;
+}
+
+.postmssg {
+	animation-name:post; 
+	animation-duration: 1s; 
+	-webkit-animation-fill-mode: forwards; 
+	-moz-animation-fill-mode: forwards; 
+	animation-fill-mode: forwards;
+}
+
+.sender {
+  font-size: .7em;
+}
+
+#btn-sendMsg {
+	cursor: pointer !important;
+}
+
+#btn-login {
+	cursor: pointer !important;
+}
+
+#accbtn {
+	cursor: pointer !important;
+}
+
+@keyframes post {
+	0% {
+        transform: scale(.1,.1);
+    }
+    50% {
+        transform: scale(1.05,1.05);
+    }
+    100% {
+        transform: scale(1,1);
+    }
+}
+
+@media (max-width: 768px) {
+	
+}
