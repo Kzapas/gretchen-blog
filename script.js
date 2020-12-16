@@ -158,9 +158,9 @@ var app = {
 	var regurl = message.substring(0, 7);
 	if (youtubeURL == "https://www.youtube.com/watch?v=") {
 		var urlID = message.slice(32);
-		displayMsg.innerHTML = "<br><iframe width='560' height='315' src='https://www.youtube.com/embed/"+urlID+"' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe>"
+		displayMsg.innerHTML = "<br><div id='iframe-yt'><iframe width='560' height='315' src='https://www.youtube.com/embed/"+urlID+"' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen></iframe></div>"
 	} else if (regurl == "https:/" || regurl == "http://") {
-		displayMsg.innerHTML = "<a href='"+message+"'>"+message+"</a>";
+		displayMsg.innerHTML = "<a target='_blank' href='"+message+"'>"+message+"</a>";
 	} else {
     displayMsg.innerHTML = message;
 	}
